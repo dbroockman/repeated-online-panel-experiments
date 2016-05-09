@@ -1,4 +1,4 @@
 1) 1/0 Letter Printing, 60# paper, fold letters, insert letters, Custom 1/0 #10 Single Window envelopes, stamp application, sort, bundle, and usps delivery.\
 2) CASS & NCOA.\
 3) If applicable, use non-profit postage.\
-4) For faster mail delivery but at lower cost, use PMOD. {\field{\*\fldinst{HYPERLINK "https://npf.org/blog/?tag=priority-mail-open-and-distribute"}}{\fldrslt https://npf.org/blog/?tag=priority-mail-open-and-distribute}}.}
+4) For faster mail delivery but at lower cost, use PMOD. https://npf.org/blog/?tag=priority-mail-open-and-distribute
