@@ -1,6 +1,6 @@
 # repeated-online-panel-experiments
 
-This guide keeps a running list of the vendors, notes about them, and other practices for running repeated online panel experiments. [Testing Theories of Attitude Change With Online Panel Field Experiments](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2742869) describes the design and an application study. This repository assumes knowledge of that paper.
+This guide keeps a running list of the vendors, notes about them, and other practices for running repeated online panel experiments. <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2742869" target="_blank">Testing Theories of Attitude Change With Online Panel Field Experiments</a> describes the design and an application study. This repository assumes knowledge of that paper.
 
 # Vendors
 
@@ -72,4 +72,4 @@ We ask respondents for their email addresses and ask them to complete follow up 
 
 ## Power Calculator
 
-The power calculator available [here](http://experiments.berkeley.edu) allows one to . We plan to open source the code for that webpage here soon.
+The power calculator available [here](http://experiments.berkeley.edu) allows one to plan out a study using the repeated online panel design. We plan to open source the code for that webpage in this repository soon.
