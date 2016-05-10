@@ -24,7 +24,7 @@ For academic work, we prefer [Qualtircs](https://www.qualtrics.com). Most univer
 
 Tango Card is a service that sends gift cards to respondents via email. A POST request is issued to the Tango API and the respodent gets the gift card. There are no fees. However, one's Tango account must be loaded with funds in advance. We recommend university researchers begin this process far in advance, as onboarding Tango with one's university and then getting the university to transfer funds can both take weeks.
 
-The Tango API accepts a POST request, but Qualtrics and SurveyGizmo are only capable of placing GET requests. A simple go-between is available [here](tango%20qualtrics%20integration) in this repository. We set up a server that runs this go-between microservice.
+The Tango API accepts a POST request, but Qualtrics and SurveyGizmo are only capable of placing GET requests. A simple go-between is available [here](tango) in this repository. We set up a server that runs this go-between microservice.
 
 Qualtrics does have a service called [Blast Rewards](https://www.qualtrics.com/innovation-exchange/tango-card/) that sends out gift cards to respondents using Tango. We are not familiar with how this works, but it may be easier than using the go-between.
 
@@ -48,11 +48,11 @@ We prefer [Snap Pack Mail](http://snappackmail.com).
 
 ## Recruitment Letters
 
-An example recruitment letter is available [here](recruitment%20letters). Note that recruitment letters are often addressed to multiple people in a household, each of whom gets a unique login code.
+An example recruitment letter is available [here](recruitment/baseline recruitment/Recruitment Letter Example 0 Baseline Multi Person HH.png). Note that recruitment letters are often addressed to multiple people in a household, each of whom gets a unique login code.
 
-There are also [specs](recruitment%20letters/specs.txt) to give mail firms for cheaper rates. We recommend using standard mail with a pre-cancelled stamp affixed, and non-profit mail if applicable. If the experiment is taking place in a concentrated area, use [PMOD](http://npf.org/blog/?p=1611) shipping. Note that standard and non-profit mail can take 2 weeks to arrive. We recommend leaving multiple weeks for mail to arrive. PMOD shipping can speed this up somewhat. First class mail is significantly more expensive but also much faster.
+There are also [specs](recruitment/baseline recruitment/specs.txt) to give mail firms for cheaper rates. We recommend using standard mail with a pre-cancelled stamp affixed, and non-profit mail if applicable. If the experiment is taking place in a concentrated area, use [PMOD](http://npf.org/blog/?p=1611) shipping. Note that standard and non-profit mail can take 2 weeks to arrive. We recommend leaving multiple weeks for mail to arrive. PMOD shipping can speed this up somewhat. First class mail is significantly more expensive but also much faster.
 
-In addition, [this image](misc%20tricks%20and%20code/how%20long%20to%20keep%20survey%20open.png) provides an example of how surevy response rates grow over time once mail arrives. Many people respond right away but over 40% of responses come in over a week after mail arrives. This suggests one should leave the survey open for at least two weeks after mail arrives.
+In addition, [this image](recruitment/baseline recruitment/how long to keep survey open.png) provides an example of how surevy response rates grow over time once mail arrives. Many people respond right away but over 40% of responses come in over a week after mail arrives. This suggests one should leave the survey open for at least two weeks after mail arrives.
 
 ## Website
 
@@ -71,7 +71,7 @@ Example survey instruments are available for a previous experiment using this de
 
 ## Re-Survey Solicitation Emails
 
-We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](qualtrics%20examples).
+We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](recruitment/reinterviews).
 
 # Treatment Procedure
 
