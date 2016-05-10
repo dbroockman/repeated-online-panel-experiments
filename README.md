@@ -42,7 +42,7 @@ Many respondents Google the name of the survey or Google the URL but do not ente
 
 ### Mail firm
 
-We prefer [Snap Pack Mail](http://snappackmail.com).
+We use [Snap Pack Mail](http://snappackmail.com).
 
 # Recruitment Procedure
 
@@ -56,7 +56,9 @@ In addition, [this image](baseline recruitment/how long to keep survey open.png)
 
 ## Website
 
-Here's an example of a live website: http://stanfordopinions.org/.
+Here's an example of a live website: [here](http://stanford.edu/~dbroock/stanford-berkeley-opinion-survey/Stanford-Berkeley_Survey_of_Public_Opinion/Stanford-Berkeley_Opinion_Survey.html).
+
+To register a domain, you can use Amazon's [Route 53](https://en.wikipedia.org/wiki/Amazon_Route_53).
 
 ## Survey Questions
 
