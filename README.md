@@ -71,7 +71,7 @@ Example survey instruments are available for a previous experiment using this de
 
 ## Re-Survey Solicitation Emails
 
-We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](reinterviews recruitment).
+We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](reinterview recruitment).
 
 # Treatment Procedure
 
