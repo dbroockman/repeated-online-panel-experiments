@@ -2,7 +2,9 @@
 
 This guide keeps a running list of the vendors, notes about them, and other practices for running repeated online panel experiments. [Testing Theories of Attitude Change With Online Panel Field Experiments](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2742869) describes the design and an application study. This repository assumes knowledge of that paper.
 
-Have questions or want more information about the design? Please use the [GitHub issues](https://github.com/dbroockman/repeated-online-panel-experiments/issues) feature to ask a question or make a request. Then you'll get a ping when we answer the question or update the repository to answer it.
+# Have a question about using the design?
+
+Please use the [GitHub issues](https://github.com/dbroockman/repeated-online-panel-experiments/issues) feature to ask a question or make a request. Then you'll get a ping when we answer the question or update the repository to answer it.
 
 # Vendors
 
@@ -36,17 +38,21 @@ We have sometimes given respondents the option of being texted when a follow-up 
 
 ### Google and Bing - Online Ads
 
-Many respondents Google the name of the survey or Google the URL but do not enter the URL into their browser bars. Buying ads on Google and Bing allows one to redirect respondents to the survey. In our experience over 10% of respondents enter the survey via this mechanism.
+Many respondents Google the name of the survey or Google the URL but do not enter the URL into their browser bars. Buying ads on Google and Bing allows one to redirect respondents to the survey. In our experience over 10% of respondents enter the survey via this mechanism. An example of the Google ad setup is available [here](https://github.com/dbroockman/repeated-online-panel-experiments/tree/master/search ads) in this repository. Bing allows you to import Google ads, so we create the ads in Google first and then import them.
 
 ### Mail firm
 
 We prefer [Snap Pack Mail](http://snappackmail.com).
 
-# Creatives
+# Recruitment Procedure
 
 ## Recruitment Letters
 
-An example recruitment letter is available [here](https://github.com/dbroockman/repeated-online-panel-experiments/tree/master/recruitment%20letters). There are also [specs](https://github.com/dbroockman/repeated-online-panel-experiments/blob/master/recruitment%20letters/specs.txt) to give mail firms for cheaper rates.
+An example recruitment letter is available [here](https://github.com/dbroockman/repeated-online-panel-experiments/tree/master/recruitment%20letters). Note that recruitment letters are often addressed to multiple people in a household, each of whom gets a unique login code.
+
+There are also [specs](https://github.com/dbroockman/repeated-online-panel-experiments/blob/master/recruitment%20letters/specs.txt) to give mail firms for cheaper rates. We recommend using standard mail with a pre-cancelled stamp affixed, and non-profit mail if applicable. If the experiment is taking place in a concentrated area, use [PMOD](http://npf.org/blog/?p=1611) shipping. Note that standard and non-profit mail can take 2 weeks to arrive. We recommend leaving multiple weeks for mail to arrive. PMOD shipping can speed this up somewhat. First class mail is significantly more expensive but also much faster.
+
+In addition, [this image](https://github.com/dbroockman/repeated-online-panel-experiments/blob/master/misc%20tricks%20and%20code/how%20long%20to%20keep%20survey%20open.png) provides an example of how surevy response rates grow over time once mail arrives. Many people respond right away but over 40% of responses come in over a week after mail arrives. This suggests one should leave the survey open for at least two weeks after mail arrives.
 
 ## Website
 
@@ -57,13 +63,19 @@ Here's an example of a live website: http://stanfordopinions.org/.
 Survey questions usually fall into one of four buckets.
 
 - Outcome measures
-- Things might predict opinion change useful for modeling
-- Filler questions unrelated to politics
+- Items might predict opinion change useful for modeling
+- Filler questions unrelated to the broad outcome of interest (e.g., non-political questions)
 - Ancillary non-experimental outcomes of independent interest
+
+Example survey instruments are available for a previous experiment using this design [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WKR39N) (see "Miami t0.pdf", etc.).
 
 ## Re-Survey Solicitation Emails
 
 We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](https://github.com/dbroockman/repeated-online-panel-experiments/tree/master/qualtrics%20examples).
+
+# Treatment Procedure
+
+The placebo design [Nickerson 2005](http://www.jakebowers.org/ITVExperiments/Nickerson.PA2005.pdf). TKTK.
 
 # Other Resources
 
@@ -75,3 +87,9 @@ We ask respondents for their email addresses and ask them to complete follow up 
 ## Power Calculator
 
 The power calculator available [here](http://experiments.berkeley.edu) allows one to plan out a study using the repeated online panel design. We plan to open source the code for that webpage in this repository soon.
+
+# FAQs
+
+Q: If the design is used for a canvass experiment canvassers may need to walk for a small distance between households who answered the survey in order to deliver the treatment. How can this be dealt with?
+
+A: Most subjects targeted with the baseline survey do not participate in it and will not be eligible for treatment.  In essence, the baseline survey has served as an oracle that reveals the many houses where, if the canvasser were to visit, their time would be wasted from the point of view of the experiment. We have found that when explaining the reason for low canvass turf density this way, canvassers readily understand that wasted time walking is better than wasted time both walking and talking.
