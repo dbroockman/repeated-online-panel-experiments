@@ -24,13 +24,13 @@ For academic work, we prefer [Qualtrics](https://www.qualtrics.com). Most univer
 
 Tango Card is a service that sends gift cards to respondents via email. A POST request is issued to the Tango API and the respodent gets the gift card. There are no fees. However, one's Tango account must be loaded with funds in advance. We recommend university researchers begin this process far in advance, as onboarding Tango with one's university and then getting the university to transfer funds can both take weeks.
 
-The Tango API accepts a POST request, but Qualtrics and SurveyGizmo are only capable of placing GET requests. A simple go-between is available [here](tango) in this repository. We set up a server that runs this go-between microservice.
+The Tango API accepts a POST request, but Qualtrics and SurveyGizmo are only capable of placing GET requests. A simple go-between is available [here](tango). We set up a server that runs this go-between microservice.
 
 Qualtrics does have a service called [Blast Rewards](https://www.qualtrics.com/innovation-exchange/tango-card/) that sends out gift cards to respondents using Tango. We are not familiar with how this works, but it may be easier than using the go-between.
 
 ### Brite Verify - Email Verification
 
-We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. In our experience respondents often mistype their email addresses in the survey. We need them to correct these typos so that we can get a valid email. To detect these typos, we use the [BriteVerify](http://briteverify.com) API. It can be integrated directly into Qualtrics. An example is available [here](briteverify) in this repository.
+We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. In our experience respondents often mistype their email addresses in the survey. We need them to correct these typos so that we can get their correct email. To detect these typos, we use the [BriteVerify](http://briteverify.com) API, which assesses whether an email address is valid. It can be integrated directly into Qualtrics. An example is available [here](briteverify).
 
 ### Twilio - Text Messages
 
@@ -38,7 +38,7 @@ We have sometimes given respondents the option of being texted when a follow-up 
 
 ### Google and Bing - Online Ads
 
-Many respondents Google the name of the survey or Google the URL but do not enter the URL into their browser bars. Buying ads on Google and Bing allows one to redirect respondents to the survey. In our experience over 10% of respondents enter the survey via this mechanism. An example of the Google ad setup is available [here](baseline recruitment/search ads) in this repository. Bing allows you to import Google ads, so we create the ads in Google first and then import them.
+Many respondents Google the name of the survey or Google the URL but do not enter the URL into their browser bars. Buying ads on Google and Bing allows one to redirect respondents to the survey. In our experience over 10% of respondents enter the survey via this mechanism. An example of the Google ad setup is available [here](baseline recruitment/search ads). Bing allows you to import Google ads, so we create the ads in Google first and then import them.
 
 ### Mail firm
 
@@ -56,9 +56,9 @@ In addition, [this image](baseline recruitment/how long to keep survey open.png)
 
 ## Website
 
-Here's an example of a live website: [here](http://stanford.edu/~dbroock/stanford-berkeley-opinion-survey/Stanford-Berkeley_Survey_of_Public_Opinion/Stanford-Berkeley_Opinion_Survey.html).
+[Here's](http://stanford.edu/~dbroock/stanford-berkeley-opinion-survey/Stanford-Berkeley_Survey_of_Public_Opinion/Stanford-Berkeley_Opinion_Survey.html) an example of a live website.
 
-To register a domain, you can use Amazon's [Route 53](https://en.wikipedia.org/wiki/Amazon_Route_53).
+To register a domain (e.g., www.miamiopinion.org), you can use Amazon's [Route 53](https://en.wikipedia.org/wiki/Amazon_Route_53).
 
 ## Survey Questions
 
