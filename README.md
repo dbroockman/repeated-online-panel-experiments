@@ -38,7 +38,7 @@ We have sometimes given respondents the option of being texted when a follow-up 
 
 ### Google and Bing - Online Ads
 
-Many respondents Google the name of the survey or Google the URL but do not enter the URL into their browser bars. Buying ads on Google and Bing allows one to redirect respondents to the survey. In our experience over 10% of respondents enter the survey via this mechanism. An example of the Google ad setup is available [here](search ads) in this repository. Bing allows you to import Google ads, so we create the ads in Google first and then import them.
+Many respondents Google the name of the survey or Google the URL but do not enter the URL into their browser bars. Buying ads on Google and Bing allows one to redirect respondents to the survey. In our experience over 10% of respondents enter the survey via this mechanism. An example of the Google ad setup is available [here](baseline recruitment/search ads) in this repository. Bing allows you to import Google ads, so we create the ads in Google first and then import them.
 
 ### Mail firm
 
@@ -48,11 +48,11 @@ We prefer [Snap Pack Mail](http://snappackmail.com).
 
 ## Recruitment Letters
 
-An example recruitment letter is available [here](recruitment/baseline recruitment/Recruitment Letter Example 0 Baseline Multi Person HH.png). Note that recruitment letters are often addressed to multiple people in a household, each of whom gets a unique login code.
+An example recruitment letter is available [here](baseline recruitment/Recruitment Letter Example 0 Baseline Multi Person HH.png). Note that recruitment letters are often addressed to multiple people in a household, each of whom gets a unique login code.
 
-There are also [specs](recruitment/baseline recruitment/specs.txt) to give mail firms for cheaper rates. We recommend using standard mail with a pre-cancelled stamp affixed, and non-profit mail if applicable. If the experiment is taking place in a concentrated area, use [PMOD](http://npf.org/blog/?p=1611) shipping. Note that standard and non-profit mail can take 2 weeks to arrive. We recommend leaving multiple weeks for mail to arrive. PMOD shipping can speed this up somewhat. First class mail is significantly more expensive but also much faster.
+There are also [specs](baseline recruitment/specs.txt) to give mail firms for cheaper rates. We recommend using standard mail with a pre-cancelled stamp affixed, and non-profit mail if applicable. If the experiment is taking place in a concentrated area, use [PMOD](http://npf.org/blog/?p=1611) shipping. Note that standard and non-profit mail can take 2 weeks to arrive. We recommend leaving multiple weeks for mail to arrive. PMOD shipping can speed this up somewhat. First class mail is significantly more expensive but also much faster.
 
-In addition, [this image](recruitment/baseline recruitment/how long to keep survey open.png) provides an example of how surevy response rates grow over time once mail arrives. Many people respond right away but over 40% of responses come in over a week after mail arrives. This suggests one should leave the survey open for at least two weeks after mail arrives.
+In addition, [this image](baseline recruitment/how long to keep survey open.png) provides an example of how surevy response rates grow over time once mail arrives. Many people respond right away but over 40% of responses come in over a week after mail arrives. This suggests one should leave the survey open for at least two weeks after mail arrives.
 
 ## Website
 
@@ -71,7 +71,7 @@ Example survey instruments are available for a previous experiment using this de
 
 ## Re-Survey Solicitation Emails
 
-We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](recruitment/reinterviews).
+We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](reinterviews recruitment).
 
 # Treatment Procedure
 
