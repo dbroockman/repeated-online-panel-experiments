@@ -12,11 +12,11 @@ Please use the [GitHub issues](https://github.com/dbroockman/repeated-online-pan
 
 [Civiqs](https://www.civiqs.com/research) administers a one-stop shop.
 
-## Particular Pieces
+## Vendors for Particular Pieces
 
 ### Survey Platform
 
-For academic work, we prefer [Qualtircs](https://www.qualtrics.com). Most universities have a subscription.
+For academic work, we prefer [Qualtrics](https://www.qualtrics.com). Most universities have a subscription.
 
 [SurveyGizmo](https://www.surveygizmo.com) is a far cheaper alternative that may be preferable for practitioners. It is more difficult to program in our experience but workable.
 
