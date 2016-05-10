@@ -52,7 +52,7 @@ An example recruitment letter is available [here](baseline recruitment/Recruitme
 
 There are also [specs](baseline recruitment/specs.txt) to give mail firms for cheaper rates. We recommend using standard mail with a pre-cancelled stamp affixed, and non-profit mail if applicable. If the experiment is taking place in a concentrated area, use [PMOD](http://npf.org/blog/?p=1611) shipping. Note that standard and non-profit mail can take 2 weeks to arrive. We recommend leaving multiple weeks for mail to arrive. PMOD shipping can speed this up somewhat. First class mail is significantly more expensive but also much faster.
 
-In addition, [this image](baseline recruitment/how long to keep survey open.png) provides an example of how surevy response rates grow over time once mail arrives. Many people respond right away but over 40% of responses come in over a week after mail arrives. This suggests one should leave the survey open for at least two weeks after mail arrives.
+In addition, [this image](baseline recruitment/how long to keep survey open.png) provides an example of how survey response rates grow over time once mail arrives. Many people respond right away but over 40% of responses come in over a week after mail arrives. This suggests one should leave the survey open for at least two weeks after mail arrives.
 
 ## Website
 
@@ -69,7 +69,7 @@ Survey questions usually fall into one of four buckets.
 - Filler questions unrelated to the broad outcome of interest (e.g., non-political questions)
 - Ancillary non-experimental outcomes of independent interest
 
-Example survey instruments are available for a previous experiment using this design [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WKR39N) (see "Miami t0.pdf", etc.).
+Example survey instruments are available [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WKR39N) for a previous experiment using this design (see "Miami t0.pdf", etc.).
 
 ## Re-Survey Solicitation Emails
 
