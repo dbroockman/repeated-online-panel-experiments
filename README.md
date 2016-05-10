@@ -1,6 +1,8 @@
-# repeated-online-panel-experiments
+# How to use this repository.
 
-This guide keeps a running list of the vendors, notes about them, and other practices for running repeated online panel experiments. <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2742869" target="_blank">Testing Theories of Attitude Change With Online Panel Field Experiments</a> describes the design and an application study. This repository assumes knowledge of that paper.
+This guide keeps a running list of the vendors, notes about them, and other practices for running repeated online panel experiments. [Testing Theories of Attitude Change With Online Panel Field Experiments](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2742869) describes the design and an application study. This repository assumes knowledge of that paper.
+
+Have questions or want more information about the design? Please use the [GitHub issues](https://github.com/dbroockman/repeated-online-panel-experiments/issues) feature to ask a question or make a request. Then you'll get a ping when we answer the question or update the repository to answer it.
 
 # Vendors
 
