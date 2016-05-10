@@ -73,9 +73,9 @@ Example survey instruments are available for a previous experiment using this de
 
 We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](reinterview recruitment).
 
-# Treatment Procedure
+# Treatment and Placebo Procedure
 
-The placebo design [Nickerson 2005](http://www.jakebowers.org/ITVExperiments/Nickerson.PA2005.pdf). TKTK.
+Our experimental design relies heavily on the use of placebo canvasses as a baseline comparison to a treatment canvass [(Nickerson 2005)](http://www.jakebowers.org/ITVExperiments/Nickerson.PA2005.pdf). When using the placebo procedure, it is necessary that the types of voters canvassed with the treatment script are similar to those canvassed with the placebo script. To do this, both treatment and placebo scripts should begin exactly the same. Only after a targeted voter is identified and marked as having come to the door should the scripts diverge to either treatment or placebo. Accurately marking the voter as having come to the door is essential for the experiment to work properly. We provide a sample placebo script and instructions to canvassers [here](implementing placebo canvass).
 
 # Other Resources
 
