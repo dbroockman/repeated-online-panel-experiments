@@ -54,9 +54,11 @@ There are also [specs](baseline recruitment/specs.txt) to give mail firms for ch
 
 In addition, [this image](baseline recruitment/how long to keep survey open.png) provides an example of how survey response rates grow over time once mail arrives. Many people respond right away but over 40% of responses come in over a week after mail arrives. This suggests one should leave the survey open for at least two weeks after mail arrives.
 
-## Website
+The recruitment letters contain unique login codes for each individual and a website that redirects them to the survey.
 
-[Here's](http://stanford.edu/~dbroock/stanford-berkeley-opinion-survey/Stanford-Berkeley_Survey_of_Public_Opinion/Stanford-Berkeley_Opinion_Survey.html) an example of a live website.
+## Website / Landing Page
+
+The recruitment letter can direct respondents directly to the survey or to a landing page. [Here's](http://stanford.edu/~dbroock/stanford-berkeley-opinion-survey/Stanford-Berkeley_Survey_of_Public_Opinion/Stanford-Berkeley_Opinion_Survey.html) an example of a live landing page.
 
 To register a domain (e.g., www.miamiopinion.org), you can use Amazon's [Route 53](https://en.wikipedia.org/wiki/Amazon_Route_53).
 
