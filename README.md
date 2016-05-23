@@ -73,11 +73,27 @@ Survey questions usually fall into one of four buckets.
 
 Example survey instruments are available [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WKR39N) for a previous experiment using this design (see "Miami t0.pdf", etc.).
 
-## Re-Survey Solicitation Emails
+## Reinterview
+
+High reinterview rates are critical for the experimental design. With the below practices both university and non-university researchers have seen response rates over 75%. We have not tested the importance of these practices individually, however.
+
+### Solicitation Emails
 
 We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](reinterview recruitment).
 
-Several other practices may help increase reinterview rates, although we have not tested their importance. We usually send 3 emails per re-interview survey -- an original solicitation and two reminders. We leave the re-interview survey open for at least two weeks. As described above in the "Twilio" section we also send a text message to coincide with the first reinterview invitation email. We ensure the incentives for the baseline survey are sent promptly, and definitely before an invitation for a reinterview wave arrives. A final factor helping reinterview rates is our use of Briteverify -- this increases the share of emails at which we solicit reinterviews that are valid.
+We usually send 3 emails per re-interview survey -- an original solicitation and two reminders. We leave the re-interview survey open for at least two weeks.
+
+### Text Reminders
+
+As described above in the "Twilio" section we also send a text message to coincide with the first reinterview invitation email.
+
+### Rapid Incentive Delivery
+
+We ensure the incentives for the baseline survey are sent promptly, and definitely before an invitation for a reinterview wave arrives.
+
+### Valid Emails
+
+As described above, a final factor helping reinterview rates is our use of BriteVerify -- this increases the share of emails at which we solicit reinterviews that are valid.
 
 # Treatment and Placebo Procedure
 
