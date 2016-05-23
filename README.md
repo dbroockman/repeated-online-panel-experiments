@@ -79,9 +79,9 @@ High reinterview rates are critical for the experimental design. With the below 
 
 ### Solicitation Emails
 
-We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](reinterview recruitment).
+We ask respondents for their email addresses and ask them to complete follow up surveys with solicitations sent to these email addresses. Examples of these solicitaitons are available [here](reinterview recruitment/followup survey email reminders.png).
 
-We usually send 3 emails per re-interview survey -- an original solicitation and two reminders. We leave the re-interview survey open for at least two weeks.
+We usually send 3 or more emails per re-interview survey -- an original solicitation and at least two reminders. We leave the re-interview survey open for at least two weeks. [This](reinterview recruitment/how long to keep reinterview open.png) graph shows when responses come in.
 
 ### Text Reminders
 
