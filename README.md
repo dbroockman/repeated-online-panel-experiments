@@ -115,3 +115,8 @@ The power calculator available [here](http://experiments.berkeley.edu) allows on
 Q: If the design is used for a canvass experiment canvassers may need to walk for a small distance between households who answered the survey in order to deliver the treatment. How can this be dealt with?
 
 A: Most subjects targeted with the baseline survey do not participate in it and will not be eligible for treatment.  In essence, the baseline survey has served as an oracle that reveals the many houses where, if the canvasser were to visit, their time would be wasted from the point of view of the experiment. We have found that when explaining the reason for low canvass turf density this way, canvassers readily understand that wasted time walking is better than wasted time both walking and talking.
+
+
+Q: Are response rates lower in battleground states?
+
+A: In data from a national random sample we plan to release soon, we see no differences in response rates between "battleground states" and non-battleground states, at least in March of 2016. This could change closer to election day.
