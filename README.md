@@ -2,6 +2,8 @@
 
 This guide keeps a running list of the vendors, notes about them, and other practices for running repeated online panel experiments. [Testing Theories of Attitude Change With Online Panel Field Experiments](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2742869) describes the design and an application study. This repository assumes knowledge of that paper.
 
+The power calculator available [here](http://experiments.berkeley.edu) allows one to plan out a study using the repeated online panel design and appreciate the benefits of this experimental design. The code for that power calcualtor is available in this repository [here](rop_power_calc).
+
 # Have a question about using the design?
 
 Please use the [GitHub issues](https://github.com/dbroockman/repeated-online-panel-experiments/issues) feature to ask a question or make a request. Then you'll get a ping when we answer the question or update the repository to answer it.
@@ -112,7 +114,7 @@ Our experimental design relies heavily on the use of placebo canvasses as a base
 
 ## Power Calculator
 
-The power calculator available [here](http://experiments.berkeley.edu) allows one to plan out a study using the repeated online panel design. We plan to open source the code for that webpage in this repository soon.
+The power calculator available [here](http://experiments.berkeley.edu) allows one to plan out a study using the repeated online panel design. The code for that power calcualtor is available in this repository [here](rop_power_calc).
 
 # FAQs
 
