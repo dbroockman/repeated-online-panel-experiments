@@ -46,6 +46,10 @@ We use [Snap Pack Mail](http://snappackmail.com).
 
 # Recruitment Procedure
 
+## Data Cleaning
+
+See our example data cleaning code [here](data management/1_create_base_universe_mail_and_logins.do).
+
 ## Recruitment Letters
 
 An example recruitment letter is available [here](baseline recruitment/Recruitment Letter Example 0 Baseline Multi Person HH.png). Note that recruitment letters are often addressed to multiple people in a household, each of whom gets a unique login code.
