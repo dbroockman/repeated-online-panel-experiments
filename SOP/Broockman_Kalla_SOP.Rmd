@@ -1,0 +1,130 @@
+---
+title: Standard operating procedures for analyzing persuasion field experiments using
+  the Broockman, Kalla, and Sekhon (2016) design
+author: "David Broockman and Joshua Kalla"
+date: "June 13, 2016"
+output: 
+  html_document:
+    theme: cosmo
+    toc: true
+---
+\pagebreak
+This standard operating procedures (SOP) document describes the default practices to be used by David Broockman and Joshua Kalla when analyzing persuasion field experiments. These defaults apply to analytic decisions that have not been made explicit in pre-analysis plans (PAPs). They are not meant to override decisions that are laid out in PAPs. 
+
+This document is modeled after the SOP for Don Green's lab at Columbia prepared by Winston Lin, Donald P. Green, and Alexander Coppock. That document is available at [https://github.com/acoppock/Green-Lab-SOP/](https://github.com/acoppock/Green-Lab-SOP/). Many thanks to the Green Lab for preparing and sharing their SOPs. 
+
+For any items unaddressed in our SOP, we will be following the procedures described in Version 1.05, June 7, 2016 of the Green Lab SOP.
+
+This is a living document. To suggest changes or additions, please feel free to submit an [issue on GitHub](https://github.com/dbroockman/repeated-online-panel-experiments/issues).
+
+# Outcomes
+
+Outcomes will most commonly be defined during the t0 baseline survey. The outcomes to be used for the experiment will be asked during the baseline survey. These responses will then be transformed into a factor and used for blocking in the randomization. That factor when asked in subsequent post-treatment surveys will frequently define the dependent variable.
+
+# Estimation Procedures and Assumptions
+
+We will use the procedures and assumptions below to calculate ATE estimate, standard errors / confidence intervals, and p-values.
+
+## Covariates to use in Regression Adjustment
+
+Unless otherwise specified, we will use the following variables from the baseline survey and administrative data as covariates to predict the outcome and increase power:
+
+- Factor(s) used for block random assignment.
+- All individual items used to create the factor(s).
+- Partisanship, as recorded on the voter file. Partisanship will be coded as democrat = 1, all other = 0 and republican = 1, all other = 0.
+- Age, as recorded on the voter file. Missing values will be recoded to the mean age.
+- Gender (female = 1, male/unknown/missing = 0), as recorded on the voter file.
+- Race, coded into dummy variables for all racial groups over 15% of the complier-reporters.
+
+## Factor Analysis on Outcome to Increase Power
+
+Below is our standard code for factor analysis of the dependent variable. The factors will be rescaled to mean 0 and standard deviation 1 to allow for a natural interpretation of the size of the effects in standard deviations.
+
+```{r, eval=FALSE}
+compute.factor.dv <- function(dv.names, print.loadings = TRUE){
+  responders <- subset(data, respondent_t1 == 1)
+  factor.obj <- princomp(responders[, dv.names], cor=TRUE)
+  if(print.loadings) print(loadings(factor.obj))
+  dv <- factor.obj$scores[,1]
+  if(cor(dv, responders$t0_abortion_legal_GSStotal) < 0) dv <- -1 * dv # Make sure it points the right way.
+  dv <- scale(dv) #rescale to mean 0 sd 1
+  return(dv[match(data$vf_vanid, responders$vf_vanid)])
+}
+main.dv <- compute.factor.dv(main.dv.names)
+```
+
+## OLS with Clustered Robust Standard Errors
+
+For estimating treatment effects we will use OLS with standard errors clustered at the household level and with the covariates mentioned above, as shown below.
+
+```{r, include=FALSE}
+library(sandwich)
+library(lmtest)
+```
+
+```{r, eval=FALSE}
+# Function for calculating clustered standard errors
+# Requires library sandwich and lmtest
+cl   <- function(fm, cluster){
+           M <- length(unique(cluster))
+           N <- length(cluster)
+           K <- fm$rank
+           dfc <- (M/(M-1))*((N-1)/(N-K))
+           uj  <- apply(estfun(fm), 2, function(x) tapply(x, cluster, sum))
+           vcovCL <- dfc*sandwich(fm, meat=crossprod(uj)/N)
+           coeftest(fm, vcovCL) }
+# Function for estimating ATE with regression adjustment and clustered standard errors
+est.ate <- function(dv, include.obs){
+  include.obs <- include.obs & !is.na(dv) # remove missing values so cl() doesn't break
+  lm.result <- lm(dv[include.obs] ~ data$treat_ind_FAKE_FOR_PAP[include.obs] + x[include.obs,])
+  return(cl(lm.result, data$hh_id[include.obs])[2,]) # Return just treatment coefficient.
+}
+```
+
+## Missing Values
+We recode missing values to the overall means. (Do not use treatment arm-specific means.)
+
+# Test for Proper Placebo Delivery
+
+We will first compare contact rates in treatment and placebo.
+
+```{r, eval=FALSE}
+cl(lm(contacted ~ treat_ind_FAKE_FOR_PAP, data), data$hh_id)
+```
+
+We will also test that compliers in the placebo group have similar baseline values to compliers in the treatment group using the covariates described above for OLS. 
+
+```{r, eval=FALSE}
+compliers <- subset(data, contacted==1)
+x.compliers <- compliers[,c(t0.covariate.names)]
+x.compliers <- as.matrix(x.compliers, dimnames = list(NULL, names(x)))
+cl(lm(treat_ind_FAKE_FOR_PAP ~ x.compliers, compliers), compliers$hh_id)
+```
+
+# Tests for Differential Attrition
+
+The below tests for average differential attrition.
+
+```{r, eval=FALSE}
+table(data$treat_ind_FAKE_FOR_PAP, data$respondent_t1)
+cl(lm(data$respondent_t1 ~ data$treat_ind_FAKE_FOR_PAP), data$hh_id) #two-tailed p-value
+```
+
+The below tests for differential attrition by covariates using the covariates described above for OLS. 
+
+```{r, eval=FALSE}
+get.F.stat <- function(treat){
+  reduced.model <- lm(data$respondent_t1 ~ x + treat)
+  xXt <- matrix(nrow = nrow(x), ncol = ncol(x))
+  for(col in 1:ncol(x)) xXt[,col] <- as.numeric(treat) * x[,col]
+  full.model <- lm(data$respondent_t1 ~ x + treat + xXt)
+  return(anova(reduced.model, full.model)$F[2])
+}
+f.distribution.under.null <- apply(perms, 2, get.F.stat)
+mean(f.distribution.under.null <= get.F.stat(data$treat_ind_FAKE_FOR_PAP))
+```
+
+# One-tailed or two-tailed test?
+
+We will report two-tailed significance tests unless the PAP specifies a one-tailed test or some other approach.
+
