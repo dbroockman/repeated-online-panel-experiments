@@ -57,7 +57,6 @@ design.Berkeley <-
     n.mailed.control <- (post.treat.n.survey/survey.retention.rate)/2
     Berkeley.treated.total <- n.mailed.treat
     n.mailed.survey <- (n.mailed.treat+n.mailed.control)/survey.mail.response.rate
-    n.outcomes <- (n.mailed.treat+n.mailed.control)*survey.retention.rate
     n.respond.presurvey <- n.mailed.survey*survey.mail.response.rate
     Berkeley.cost.treatment <- n.mailed.treat*cost.treatment
     Berkeley.cost.survey <- (n.mailed.survey*cost.recruitment.mail)+
@@ -73,7 +72,6 @@ design.Berkeley <-
     n.mailed.control <- (post.treat.n.survey/survey.retention.rate)/2
     Berkeley.treated.total <- (n.mailed.treat+n.mailed.control) * canvass.contact
     n.mailed.survey <- (n.mailed.treat+n.mailed.control) / survey.mail.response.rate
-    n.outcomes <- (n.mailed.treat+n.mailed.control) * survey.retention.rate
     n.respond.presurvey <- n.mailed.survey*survey.mail.response.rate
     Berkeley.cost.treatment <- n.mailed.treat*cost.treatment*canvass.contact+n.mailed.control*cost.treatment*canvass.contact
     Berkeley.cost.survey <- (n.mailed.survey*cost.recruitment.mail) +
@@ -506,7 +504,7 @@ output$design.line <- renderUI({
       <li> These voters are sent mail inviting them to participate in an online survey. </li>
       <li> ", prettyNum(round(Berkeley()["n.respond.presurvey"]),big.mark=",",scientific=FALSE),"voters",paste0("(",Berkeley()["survey.mail.response.rate"]*100,"%)"),"are expected to take this survey.</li>
       <li> ", prettyNum(round(Berkeley()["n.mailed.treat"]),big.mark=",",scientific=FALSE),ifelse(Berkeley()["n.treatments"]>1,paste0("(across ",Berkeley()["n.treatments"]," treatment conditions)"),""),"will be randomly assigned to receive persuasion canvass.",prettyNum(round(Berkeley()["n.mailed.control"]),big.mark=",",scientific=FALSE),"will be assigned to a placebo group that receives a canvass on a topic unrelated to the persuasion (e.g., recycling or blood donations). We expect you to contact ", prettyNum(round(Berkeley()["n.treated.condition"]),big.mark=",",scientific=FALSE), " in each group.</li>
-      <li> After the canvass, only those voters successfully reached at the door will be sent an email inviting them to participate in a follow-up survey. We expect ", Berkeley()["post.treat.n.survey"]," responses total.</li>
+      <li> After the canvass, only those voters successfully reached at the door will be sent an email inviting them to participate in a follow-up survey. We expect ", prettyNum(round(Berkeley()["post.treat.n.survey"]/2*(Berkeley()["n.treatments"]+1)),big.mark=",",scientific=FALSE)," responses total.</li>
       <li> The follow-up survey gathers data that allows for the effect of the canvass to be estimated, and a model to be constructed identifying those voters most persuaded.</li>
       ",ifelse(input$n.post.waves>1,"\n <li>Over the course of several weeks, follow-up waves assess to what extent the effects persist. </li>",""),"</ol>")         
   }})
