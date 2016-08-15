@@ -54,7 +54,7 @@ See our example data cleaning code [here](data management/1_create_base_universe
 
 ## Recruitment Letters
 
-An example recruitment letter is available [here](baseline recruitment/Recruitment Letter Example 0 Baseline Multi Person HH.png). Note that recruitment letters are often addressed to multiple people in a household, each of whom gets a unique login code.
+An example recruitment letter is available [here](baseline recruitment/Recruitment Letter Sample.png). Note that recruitment letters are often addressed to multiple people in a household, each of whom gets a unique login code.
 
 There are also [specs](baseline recruitment/specs.txt) to give mail firms for cheaper rates. We recommend using standard mail with a pre-cancelled stamp affixed, and non-profit mail if applicable. If the experiment is taking place in a concentrated area, use [PMOD](http://npf.org/blog/?p=1611) shipping. Note that standard and non-profit mail can take 2 weeks to arrive. We recommend leaving multiple weeks for mail to arrive. PMOD shipping can speed this up somewhat. First class mail is significantly more expensive but also much faster.
 
