@@ -44,6 +44,10 @@ We have sometimes given respondents the option of being texted when a follow-up 
 
 Many respondents Google the name of the survey or Google the URL but do not enter the URL into their browser bars. Buying ads on Google and Bing allows one to redirect respondents to the survey. In our experience over 10% of respondents enter the survey via this mechanism. An example of the Google ad setup is available [here](baseline recruitment/search ads). Bing allows you to import Google ads, so we create the ads in Google first and then import them.
 
+### Voter file data
+
+[TargetSmart](https://targetsmart.com) and [Catalist](https://catalist.us) offer voter file data. If you plan to use voter file data, be sure to investigate the relevant legal restrictions, which vary by state.
+
 ### Mail firm
 
 We use [Snap Pack Mail](http://snappackmail.com).
