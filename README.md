@@ -2,6 +2,8 @@
 
 This guide keeps a running list of the vendors, notes about them, and other practices for running repeated online panel experiments. [The Design of Field Experiments With Survey Outcomes: A Framework for Selecting More Efficient, Robust, and Ethical Designs](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2742869) describes the design and an application study. This repository assumes knowledge of that paper.
 
+Our companion paper [Increasing Response Rates and Representativeness of Online Panels Recruited by Mail: Evidence from Experiments in 12 Original Surveys](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3136245) also contains recommendations on optimal incentives and anticipated response rates.
+
 The power calculator available [here](http://experiments.berkeley.edu) allows one to plan out a study using the repeated online panel design and appreciate the benefits of this experimental design. The code for that power calcualtor is available in this repository [here](rop_power_calc).
 
 # Have a question about using the design?
@@ -31,6 +33,8 @@ Tango Card is a service that sends gift cards to respondents via email. A POST r
 The Tango API accepts a POST request, but Qualtrics and SurveyGizmo are only capable of placing GET requests. A simple go-between is available [here](tango). We set up a server on [Heroku](https://www.heroku.com) that runs this go-between microservice.
 
 Qualtrics does have a service called [Blast Rewards](https://www.qualtrics.com/innovation-exchange/tango-card/) that sends out gift cards to respondents using Tango. We are not familiar with how this works, but it may be easier than using the go-between.
+
+See our companion paper [Increasing Response Rates and Representativeness of Online Panels Recruited by Mail: Evidence from Experiments in 12 Original Surveys](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3136245) for recommendations on incentive amounts.
 
 ### Brite Verify - Email Verification
 
@@ -67,6 +71,8 @@ There are also [specs](baseline recruitment/specs.txt) to give mail firms for ch
 In addition, [this image](baseline recruitment/how long to keep survey open.png) provides an example of how survey response rates grow over time once mail arrives. Many people respond right away but over 40% of responses come in over a week after mail arrives. This suggests one should leave the survey open for at least two weeks after mail arrives.
 
 The recruitment letters contain unique login codes for each individual and a website that redirects them to the survey.
+
+See our companion paper [Increasing Response Rates and Representativeness of Online Panels Recruited by Mail: Evidence from Experiments in 12 Original Surveys](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3136245) for recommendations on recruitment letter text, survey naming, etc.
 
 ## Website / Landing Page
 
@@ -117,6 +123,8 @@ Our experimental design relies heavily on the use of placebo canvasses as a base
 
 - [The Design of Field Experiments With Survey Outcomes: A Framework for Selecting More Efficient, Robust, and Ethical Designs](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2742869) describes the design and an application study. This repository assumes knowledge of that paper.
 - [Durably reducing transphobia](http://stanford.edu/~dbroock/published%20paper%20PDFs/broockman_kalla_transphobia_canvassing_experiment.pdf) was the first published experiment using the design.
+- The original field experiments in [The Minimal Persuasive Effects of Campaign Contact in General Elections: Evidence from 49 Field Experiments](https://doi.org/10.1017/S0003055417000363) were also conducted using this design.
+- Our companion paper [Increasing Response Rates and Representativeness of Online Panels Recruited by Mail: Evidence from Experiments in 12 Original Surveys](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3136245) contains recommendations on optimal incentives and anticipated response rates.
 
 ## Power Calculator
 
