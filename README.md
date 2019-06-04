@@ -34,7 +34,11 @@ The Tango API accepts a POST request, but Qualtrics and SurveyGizmo are only cap
 
 Qualtrics does have a service called [Blast Rewards](https://www.qualtrics.com/innovation-exchange/tango-card/) that sends out gift cards to respondents using Tango. We are not familiar with how this works, but it may be easier than using the go-between.
 
+There is allegedly a more direct go-between for Tango and Qualtrics as described [here](https://on24static.akamaized.net/event/19/52/40/4/rt/1/documents/resourceList1551725816720/qualtricsincentivessetupguide121420181551725827846.pdf), but we have not used this solution yet ourselves.
+
 See our companion paper [Increasing Response Rates and Representativeness of Online Panels Recruited by Mail: Evidence from Experiments in 12 Original Surveys](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3136245) for recommendations on incentive amounts.
+
+Thank you to Levi Marks and Matto Mildenberger for providing some code to update the Tango API code for their new v2 interface.
 
 ### Brite Verify - Email Verification
 
