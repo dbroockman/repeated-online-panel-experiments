@@ -1,1 +1,1 @@
-web: python tango_client.py
+web: python tango_flask_client.py

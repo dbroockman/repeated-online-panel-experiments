@@ -1,17 +1,14 @@
 import json
 import requests
 from requests.auth import HTTPBasicAuth
-import tango_credentials_prod as tango_credentials
+import tango_cred_prod as tango_cred
 
+for cred in ['platform_name', 'tango_key', 'customer_id']:
+	assert getattr(tango_cred, cred)
 
-for cred in ['platformid', 'tangoapikey', 'customer', 'account_identifier', 'client_api_key']:
-	assert getattr(tango_credentials, cred)
+account_ids = ['test1', 'test2', 'test3']
 
-
-r = requests.get(tango_credentials.url_base + 'accounts/%s/%s' % (tango_credentials.customer,tango_credentials.account_identifier),
-             auth = HTTPBasicAuth(tango_credentials.platformid,
-             	tango_credentials.tangoapikey))
-
-print 'Tango API response: %s' % r.status_code
-print r.text
-print r.json()['account']['available_balance'] / 100
+for account_id in account_ids:
+	r = requests.get(	tango_cred.base_url + 'accounts/' + account_id,
+						auth = HTTPBasicAuth(tango_cred.platform_name, tango_cred.tango_key))
+	print r.json()
