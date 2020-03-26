@@ -14,7 +14,7 @@ Please use the [GitHub issues](https://github.com/dbroockman/repeated-online-pan
 
 ## All-In-One Vendors
 
-[Civiqs](https://www.civiqs.com/research) offers all-in-one experiment administration services for the repeated survey design, using their custom-built online polling platform. They provide time-saving expert support and guidance for your project from start to finish, including mail, online surveys, data management, and incentive fulfillment. For more information, you can email <inquiries@civiqs.com> or visit [www.civiqs.com/research](https://www.civiqs.com/research). (Disclosure: the authors of this repository David Broockman and Joshua Kalla are volunteer members of Civiqs' scientific advisory board.)
+[Civiqs](https://www.civiqs.com) offers all-in-one experiment administration services for the repeated survey design, using their custom-built online polling platform. They provide time-saving expert support and guidance for your project from start to finish, including mail, online surveys, data management, and incentive fulfillment. For more information, you can email <inquiries@civiqs.com> or visit [www.civiqs.com/research](https://civiqs.com/reports). (Disclosure: the authors of this repository David Broockman and Joshua Kalla are volunteer members of Civiqs' scientific advisory board.)
 
 [Change-Point Analytics](https://www.changepoint-analytics.com) also offers a related service.
 
